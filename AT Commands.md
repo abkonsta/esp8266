@@ -1,3 +1,4 @@
+Note: AT commands must be typed in **without** spaces around the **+**.
 
 <table id="tablepress-10" class="tablepress tablepress-id-10">
 <thead>
