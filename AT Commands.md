@@ -1,10 +1,7 @@
 Note: AT commands must be typed in **without** spaces around the **+**.
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
+Basic Commands
+==============
 
 Command | Description
 ------- | ---------------
