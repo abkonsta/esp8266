@@ -156,14 +156,14 @@ AT + CWSTARTSMART = 1</sub><br>
 	<td class="column-1"><sub>AT + CWSTOPSMART</sub></td><td class="column-2"><sub>The command stops the SmartConfig</sub></td><td class="column-3"><sub>wifi</sub></td><td class="column-4"><sub>AT + CWSTOPSMART</sub></td><td class="column-5"></td><td class="column-6"><sub>Regardless of the results of the command AT + CWSTARTSMART always use after completion of the command AT + CWSTOPSMART to free up resources</sub></td>
 </tr>
 <tr class="row-32 even">
-	<td class="column-1"><sub>AT + CIPSTATUS</sub></td><td class="column-2"><sub>Display connection status</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>AT + CIPSTATUS</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>Returns </sub><id><sub>= ID compounds 0-4, </sub><br><sub>
+	<td class="column-1"><sub>AT + CIPSTATUS</sub></td><td class="column-2"><sub>Display connection status</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>AT + CIPSTATUS</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>Returns </sub><id><sub>= ID compounds 0-4, </sub><br><sub>
 &lt;type&gt; = connection type (2 - have IP, 3 - connected, 4 - off) </sub><br><sub>
 "TCP" or "UDP",</sub><br>
 <remote_ip><sub>= remote IP address,</sub><br>
 <remote_port><sub>= remote port,</sub><tetype><sub>= communication type: 0: connected client, 1: server</sub></tetype></remote_port></remote_ip></id></td>
 </tr>
 <tr class="row-33 odd">
-	<td class="column-1"><sub>AT + CIPSTART</sub></td><td class="column-2"><sub>Install a TCP or UDP, or to get information about the current connection</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>1. A single connection (+ CIPMUX = 0) </sub><br><sub>
+	<td class="column-1"><sub>AT + CIPSTART</sub></td><td class="column-2"><sub>Install a TCP or UDP, or to get information about the current connection</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>1. A single connection (+ CIPMUX = 0) </sub><br><sub>
 AT + CIPSTART = </sub><br><sub>
 &lt;type&gt;, &lt;address&gt; &lt;port&gt; </sub><br><sub>
 [(&lt;local port&gt;) (&lt;mode&gt;)] </sub><br><sub>
@@ -185,7 +185,7 @@ Example: AT + CIPSTART = "TCP", "192.168.101.110", </font><font>1000 </sub><br><
 Additional information in the document "Espressif AT Command Examples"</sub></local></mode></td>
 </tr>
 <tr class="row-34 even">
-	<td class="column-1"><sub>AT + CIPSEND</sub></td><td class="column-2"><sub>Send data</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>1. A single connection (+ CIPMUX = 0) </sub><br><sub>
+	<td class="column-1"><sub>AT + CIPSEND</sub></td><td class="column-2"><sub>Send data</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>1. A single connection (+ CIPMUX = 0) </sub><br><sub>
 AT + CIPSEND = &lt;length&gt; </sub><br><sub>
 2. </font><font>Multiple connections: </sub><br><sub>
 (+ CIPMUX = 1) AT + CIPSEND = &lt;ID&gt;, &lt;length&gt; </sub><br><sub>
@@ -198,34 +198,34 @@ transmission mode" </sub><br><sub>
 interrupt to receive data and go into command mode can be "+++" sequence in a separate package. </font><font>20ms interval between packets. </font><font>Examples can be found in the document "Espressif AT Command Examples"</sub></td>
 </tr>
 <tr class="row-35 odd">
-	<td class="column-1"><sub>AT + CIPCLOSE</sub></td><td class="column-2"><sub>Close connection TCP or UDP</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>1. multiple connections: </sub><br><sub>
+	<td class="column-1"><sub>AT + CIPCLOSE</sub></td><td class="column-2"><sub>Close connection TCP or UDP</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>1. multiple connections: </sub><br><sub>
 (+ CIPMUX = 1) AT + CIPCLOSE =</sub><id соединения="" 0-4=""><br><sub>
 2. A single connection (+ CIPMUX = 0) AT + CIPCLOSE</sub></id></td><td class="column-5"><sub>AT + CIPCLOSE =? </sub><br><sub>
 Returns OK</sub></td><td class="column-6"><sub>Returns "LINK IS NOT" or "UNLINK" if the connection ID is already broken, ERROR if there is no connection. </font><font>If the client mode</sub><id соединения=""><sub>= 5, then close all connections</sub></id></td>
 </tr>
 <tr class="row-36 even">
-	<td class="column-1"><sub>AT + CIFSR</sub></td><td class="column-2"><sub>Display local IP addresses, the address that is received from the access point to which are connected and the IP address of ESP8266 SoftAP (local access point)</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>AT + CIFSR</sub></td><td class="column-5"><sub>AT + CIFSR =? </sub><br><sub>
+	<td class="column-1"><sub>AT + CIFSR</sub></td><td class="column-2"><sub>Display local IP addresses, the address that is received from the access point to which are connected and the IP address of ESP8266 SoftAP (local access point)</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>AT + CIFSR</sub></td><td class="column-5"><sub>AT + CIFSR =? </sub><br><sub>
 Only test</sub></td><td class="column-6"><sub>Returns the IP address of the ESP8266 SoftAP and </sub><br><sub>
 IP address ESP8266 Station</sub></td>
 </tr>
 <tr class="row-37 odd">
-	<td class="column-1"><sub>AT + CIPMUX</sub></td><td class="column-2"><sub>Select single or multiple connections</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>AT + CIPMUX = &lt;mode&gt;</sub></td><td class="column-5"><sub>AT + CIPMUX? </sub><br><sub>
+	<td class="column-1"><sub>AT + CIPMUX</sub></td><td class="column-2"><sub>Select single or multiple connections</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>AT + CIPMUX = &lt;mode&gt;</sub></td><td class="column-5"><sub>AT + CIPMUX? </sub><br><sub>
 Returns the current mode 1 or 0</sub></td><td class="column-6"><sub>0 = single connection, 1 = connect multiple. </sub><br><sub>
 Edit mode is possible only after closing all connections. </font><font>If the server is running, you need to restart the module. </sub><br><sub>
 "AT + CIPMUX = 1" command is available only if "AT + CIPMODE = 0"</sub></td>
 </tr>
 <tr class="row-38 even">
-	<td class="column-1"><sub>AT + CIPSERVER</sub></td><td class="column-2"><sub>Start (restart) TCP server</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>AT + CIPSERVER = &lt;mode&gt; [&lt;port&gt;]</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>0 = server is disabled, 1 = server is running. </font><font>Port is optional, default: 333. To run the server module must be in the mode of multiple connections AT + CIPMUX = 1. </font><font>Examples: AT + CIPMUX = 1 </sub><br><sub>
+	<td class="column-1"><sub>AT + CIPSERVER</sub></td><td class="column-2"><sub>Start (restart) TCP server</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>AT + CIPSERVER = &lt;mode&gt; [&lt;port&gt;]</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>0 = server is disabled, 1 = server is running. </font><font>Port is optional, default: 333. To run the server module must be in the mode of multiple connections AT + CIPMUX = 1. </font><font>Examples: AT + CIPMUX = 1 </sub><br><sub>
 AT + CIPSERVER = 1,1001</sub></td>
 </tr>
 <tr class="row-39 odd">
-	<td class="column-1"><sub>AT + CIPSTO</sub></td><td class="column-2"><sub>Set / view server timeout</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>AT + CIPSTO = &lt;timeout&gt;</sub></td><td class="column-5"><sub>AT + CIPSTO? </sub><br><sub>
+	<td class="column-1"><sub>AT + CIPSTO</sub></td><td class="column-2"><sub>Set / view server timeout</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>AT + CIPSTO = &lt;timeout&gt;</sub></td><td class="column-5"><sub>AT + CIPSTO? </sub><br><sub>
 Returns specified timeout</sub></td><td class="column-6"><sub>Timeout in seconds from 0 to 7200. Example: AT + CIPMUX = 1 </sub><br><sub>
 AT + CIPSERVER = 1,1001 </sub><br><sub>
 AT + CIPSTO = 10</sub></td>
 </tr>
 <tr class="row-40 even">
-	<td class="column-1"><sub>AT + CIPMODE</sub></td><td class="column-2"><sub>Set-through mode "unvarnished transmission mode"</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>AT + CIPMODE = &lt;mode&gt;</sub></td><td class="column-5"><sub>AT + CIPMODE?</sub></td><td class="column-6"><sub>0 = normal, </sub><br><sub>
+	<td class="column-1"><sub>AT + CIPMODE</sub></td><td class="column-2"><sub>Set-through mode "unvarnished transmission mode"</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>AT + CIPMODE = &lt;mode&gt;</sub></td><td class="column-5"><sub>AT + CIPMODE?</sub></td><td class="column-6"><sub>0 = normal, </sub><br><sub>
 1 unvarnished transmission mode = </sub><br><sub>
 (Mode 1 is available only when AT + CIPMUX = 0). </sub><br><sub>
 Example: AT + CIPMODE = 1</sub></td>
@@ -239,18 +239,18 @@ Example: AT + CIPMODE = 1</sub></td>
 Example: AT + SAVETRANSLINK = 1, "192.168.6.110", 1002</sub></ip></td>
 </tr>
 <tr class="row-42 even">
-	<td class="column-1"><sub>AT + CIUPDATE</sub></td><td class="column-2"><sub>Firmware Update via the cloud. </font><font>The module must be in mode 1 or 3 and be connected to the access point with Internet access.</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>AT + CIUPDATE</sub></td><td class="column-5"></td><td class="column-6"><sub>1 found server </sub><br><sub>
+	<td class="column-1"><sub>AT + CIUPDATE</sub></td><td class="column-2"><sub>Firmware Update via the cloud. </font><font>The module must be in mode 1 or 3 and be connected to the access point with Internet access.</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>AT + CIUPDATE</sub></td><td class="column-5"></td><td class="column-6"><sub>1 found server </sub><br><sub>
 2 connect server </sub><br><sub>
 3 got edition </sub><br><sub>
 4 start update</sub></td>
 </tr>
 <tr class="row-43 odd">
-	<td class="column-1"><sub>AT + PING</sub></td><td class="column-2"><sub>Ping the host name or IP address</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>AT + PING = ip</sub></td><td class="column-5"></td><td class="column-6"><sub>Examples: </sub><br><sub>
+	<td class="column-1"><sub>AT + PING</sub></td><td class="column-2"><sub>Ping the host name or IP address</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>AT + PING = ip</sub></td><td class="column-5"></td><td class="column-6"><sub>Examples: </sub><br><sub>
 AT + PING = "192.168.1.1" </sub><br><sub>
 AT + PING = "esp8266.ru"</sub></td>
 </tr>
 <tr class="row-44 even">
-	<td class="column-1"><sub>+ IPD</sub></td><td class="column-2"><sub>Get the data</sub></td><td class="column-3"><sub>TCP / IP</sub></td><td class="column-4"><sub>(+ CIPMUX = 0) </sub><br><sub>
+	<td class="column-1"><sub>+ IPD</sub></td><td class="column-2"><sub>Get the data</sub></td><td class="column-3"><sub>tcp/ip</sub></td><td class="column-4"><sub>(+ CIPMUX = 0) </sub><br><sub>
 + IPD,</sub><len><sub>:</sub><data><br><sub>
 (+ CIPMUX = 1) </sub><br><sub>
 + IPD,</sub><id><sub>.</sub><len><sub>:</sub><data></data></len></id></data></len></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>1. Single connection </sub><br><sub>
