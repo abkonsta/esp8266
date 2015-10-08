@@ -25,7 +25,7 @@ Comprehensive Command List
 <table id="tablepress-10" class="tablepress tablepress-id-10">
 <thead>
 <tr class="row-1 odd">
-	<th class="column-1"><sub>Command</sub></th><th class="column-2"><sub>Description</sub></th><th class="column-3"><sub>Style</sub></th><th class="column-4"><sub>Perform</sub></th><th class="column-5"><sub>Request / Test</sub></th><th class="column-6"><sub>Options</sub></th>
+	<th class="column-1"><sub>Command</sub></th><th class="column-2"><sub>Description</sub></th><th class="column-3"><sub>Style</sub></th><th class="column-4"><sub>Format</sub></th><th class="column-5"><sub>Request / Test</sub></th><th class="column-6"><sub>Options</sub></th>
 </tr>
 </thead>
 <tbody class="row-hover">
@@ -50,8 +50,10 @@ ATE1</sub></td><td class="column-5"></td><td class="column-6"><sub>Note: ATE 0 o
 	<td class="column-1"><sub>AT + RESTORE</sub></td><td class="column-2"><sub>Reset to factory settings</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT + RESTORE</sub></td><td class="column-5"></td><td class="column-6"><sub>Note: After resetting the unit will restart</sub></td>
 </tr>
 <tr class="row-8 even">
-	<td class="column-1"><sub>AT + UART_CUR</sub></td><td class="column-2"><sub>Set the serial interface for the current session (current, ie without storing in the flash memory)</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>+ = UART_CUR AT baudrate, databits, stopbits, </sub><br><sub>
-parity, flow control</sub></td><td class="column-5"></td><td class="column-6"><baudrate><sub> speed 4400-4608000</sub><br>
+	<td class="column-1"><sub>AT + UART_CUR</sub></td><td class="column-2"><sub>Set the serial interface for the current session without storing in the flash memory</sub></td>
+	<td class="column-3"><sub>AT+UART_CUR=115200,8,1,0,3</sub></td>
+	<td class="column-5"></td>
+	<td class="column-6"><baudrate><sub> speed 4400-4608000</sub><br>
 <databits><sub>data bits </sub><br><sub>
 is 5: 5 Bit </sub><br><sub>
 6: 6 Bit </sub><br><sub>
@@ -75,7 +77,7 @@ Example: </sub><br><sub>
 AT + UART = 115200,8,1,0,0</sub></flow></parity></stopbits></databits></baudrate></td>
 </tr>
 <tr class="row-9 odd">
-	<td class="column-1"><sub>AT + UART_DEF</sub></td><td class="column-2"><sub>The team is completely analogous to AT + UART_CUR</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"><sub>Command parameters are stored in flash memory and are loaded when you start the unit.</sub></td>
+	<td class="column-1"><sub>AT + UART_DEF</sub></td><td class="column-2"><sub>Same as AT + UART_CUR</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"><sub>Command parameters are stored in flash memory and are loaded when you start the unit.</sub></td>
 </tr>
 <tr class="row-10 even">
 	<td class="column-1"><sub>AT + CWMODE_CUR</sub></td><td class="column-2"><sub>Switching the wifi for the current session (current, ie without storing in the flash memory)</sub></td><td class="column-3"><sub>wifi</sub></td><td class="column-4"><sub>AT + CWMODE_CUR = &lt;mode&gt;</sub></td><td class="column-5"><sub>CWMODE_CUR + AT? </sub><br><sub>
