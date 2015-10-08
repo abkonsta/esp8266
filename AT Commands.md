@@ -1,26 +1,7 @@
 Note: AT commands must be typed in **without** spaces around the **+**.
 
-Basic Commands
-==============
-
-Command | Description
-------- | ---------------
-AT | Test AT startup
-AT+RST | Restart module
-AT+GMR | View version info
-AT+GSLP | Enter deep-sleep mode
-ATE | AT commands echo or not
-AT+RESTORE | Factory Reset
-AT+UART | UART configuration, **deprecated**
-AT+UART_CUR | Set the current UART configuration
-AT+UART_DEF | UART default configuration, save to flash
-AT+SLEEP | Sleep mode
-AT+RFPOWER | Set maximum value of RF TX Power
-AT+RFVDD | Set RF TX Power according to VDD33
-
-
-Comprehensive Command List
-==========================
+Comprehensive AT Command List
+=============================
 
 <table id="tablepress-10" class="tablepress tablepress-id-10">
 <thead>
