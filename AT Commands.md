@@ -8,16 +8,16 @@ Note: AT commands must be typed in **without** spaces around the **+**.
 </thead>
 <tbody class="row-hover">
 <tr class="row-2 even">
-	<td class="column-1"><sub>AT</sub></td><td class="column-2"><sub>Checking module</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>If the module is successfully started, then say "OK"</sub></td>
+	<td class="column-1"><sub>AT</sub></td><td class="column-2"><sub>Check module</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>If the module is successfully started, then say "OK"</sub></td>
 </tr>
 <tr class="row-3 odd">
 	<td class="column-1"><sub>AT + RST</sub></td><td class="column-2"><sub>Restart module</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AR + RST</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>After a successful restart returns "OK"</sub></td>
 </tr>
 <tr class="row-4 even">
-	<td class="column-1"><sub>AT + GMR</sub></td><td class="column-2"><sub>Display firmware version. </sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT + GMR</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>Version is displayed as eight digits. </font><font>The first group of 4 digits - version of the AT (eg, 0022), a second group of 4 - version of the SDK (for example, 0100)</sub></td>
+	<td class="column-1"><sub>AT + GMR</sub></td><td class="column-2"><sub>Display firmware version</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT + GMR</sub></td><td class="column-5"><sub>-</sub></td><td class="column-6"><sub>Version is displayed as eight digits. </font><font>The first group of 4 digits - version of the AT (eg, 0022), a second group of 4 - version of the SDK (for example, 0100)</sub></td>
 </tr>
 <tr class="row-5 odd">
-	<td class="column-1"><sub>AT + GSLP</sub></td><td class="column-2"><sub>The transition to a low power mode</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT + GSLP = &lt;time in ms&gt;</sub></td><td class="column-5"></td><td class="column-6"><sub>Example: AT + GSLP = 5000 (5s) </sub><br><sub>
+	<td class="column-1"><sub>AT + GSLP</sub></td><td class="column-2"><sub>Transition to low power mode</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT + GSLP = &lt;time in ms&gt;</sub></td><td class="column-5"></td><td class="column-6"><sub>Example: AT + GSLP = 5000 (5s) </sub><br><sub>
 To the module came from sleep mode, you need to connect terminals and XPD_DCDC EXT_RSTB</sub></td>
 </tr>
 <tr class="row-6 even">
