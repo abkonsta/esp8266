@@ -1,10 +1,12 @@
+
+
 <style type="text/css">
 table tr td {
   font-size: 12pt;
 }
 </style>
 
-<table id="tablepress-10" class="tablepress tablepress-id-10">
+<table>
 <thead>
 <tr class="row-1 odd">
 	<th class="column-1">Команда</th><th class="column-2">Описание</th><th class="column-3">Тип</th><th class="column-4">Выполнение</th><th class="column-5">Запрос/Тест</th><th class="column-6">Параметры</th>
