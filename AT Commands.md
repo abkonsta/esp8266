@@ -50,8 +50,10 @@ ATE1</sub></td><td class="column-5"></td><td class="column-6"><sub>Note: ATE 0 o
 	<td class="column-1"><sub>AT + RESTORE</sub></td><td class="column-2"><sub>Reset to factory settings</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT + RESTORE</sub></td><td class="column-5"></td><td class="column-6"><sub>Note: After resetting the unit will restart</sub></td>
 </tr>
 <tr class="row-8 even">
-	<td class="column-1"><sub>AT + UART_CUR</sub></td><td class="column-2"><sub>Set the serial interface for the current session without storing in the flash memory</sub></td>
-	<td class="column-3"><sub>AT+UART_CUR=115200,8,1,0,3</sub></td>
+	<td class="column-1"><sub>AT + UART_CUR</sub></td>
+	<td class="column-2"><sub>Set the serial interface for the current session without storing in the flash memory</sub></td>
+	<td class="column-3"><sub>base</sub></td>
+	<td class="column-4"><sub>AT+UART_CUR=115200,8,1,0,3</sub></td>
 	<td class="column-5"></td>
 	<td class="column-6"><baudrate><sub> speed 4400-4608000</sub><br>
 <databits><sub>data bits </sub><br><sub>
