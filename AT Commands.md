@@ -12,7 +12,7 @@ AT+GSLP | Enter deep-sleep mode
 ATE | AT commands echo or not
 AT+RESTORE | Factory Reset
 AT+UART | UART configuration, **deprecated**
-AT+UART_CUR | UART current configuration
+AT+UART_CUR | Set the current UART configuration
 AT+UART_DEF | UART default configuration, save to flash
 AT+SLEEP | Sleep mode
 AT+RFPOWER | Set maximum value of RF TX Power
