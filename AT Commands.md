@@ -1,5 +1,23 @@
 Note: AT commands must be typed in **without** spaces around the **+**.
 
+Basic Commands
+==============
+
+|AT |Test AT startup|
+---------------------
+|AT+RST |Restart module|
+|AT+GMR |View version info|
+|AT+GSLP |Enter deep-sleep mode|
+|ATE |AT commands echo or not|
+|AT+RESTORE |Factory Reset|
+|AT+UART |UART configuration, [@deprecated]|
+|AT+UART_CUR |UART current configuration|
+|AT+UART_DEF |UART default configuration, save to flash|
+|AT+SLEEP |Sleep mode|
+|AT+RFPOWER |Set maximum value of RF TX Power|
+|AT+RFVDD |Set RF TX Power according to VDD33|
+
+
 <table id="tablepress-10" class="tablepress tablepress-id-10">
 <thead>
 <tr class="row-1 odd">
@@ -21,14 +39,14 @@ Note: AT commands must be typed in **without** spaces around the **+**.
 To the module came from sleep mode, you need to connect terminals and XPD_DCDC EXT_RSTB</sub></td>
 </tr>
 <tr class="row-6 even">
-	<td class="column-1"><sub>ATE</sub></td><td class="column-2"><sub>enable / disable echo</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>ATE0 </sub><br><sub>
+	<td class="column-1"><sub>ATE</sub></td><td class="column-2"><sub>Enable / disable echo</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>ATE0 </sub><br><sub>
 ATE1</sub></td><td class="column-5"></td><td class="column-6"><sub>Note: ATE 0 or 1 without an error.</sub></td>
 </tr>
 <tr class="row-7 odd">
 	<td class="column-1"><sub>AT + RESTORE</sub></td><td class="column-2"><sub>Reset to factory settings</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>AT + RESTORE</sub></td><td class="column-5"></td><td class="column-6"><sub>Note: After resetting the unit will restart</sub></td>
 </tr>
 <tr class="row-8 even">
-	<td class="column-1"><sub>AT + UART_CUR</sub></td><td class="column-2"><sub>Setting the serial interface for the current session (current, ie without storing in the flash memory)</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>+ = UART_CUR AT baudrate, databits, stopbits, </sub><br><sub>
+	<td class="column-1"><sub>AT + UART_CUR</sub></td><td class="column-2"><sub>Set the serial interface for the current session (current, ie without storing in the flash memory)</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"><sub>+ = UART_CUR AT baudrate, databits, stopbits, </sub><br><sub>
 parity, flow control</sub></td><td class="column-5"></td><td class="column-6"><baudrate><sub> speed 4400-4608000</sub><br>
 <databits><sub>data bits </sub><br><sub>
 is 5: 5 Bit </sub><br><sub>
