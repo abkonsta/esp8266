@@ -1,3 +1,9 @@
+<style>
+table tr td {
+  font-size: 12pt;
+}
+</style>
+
 <table id="tablepress-10" class="tablepress tablepress-id-10">
 <thead>
 <tr class="row-1 odd">
