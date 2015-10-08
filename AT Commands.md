@@ -1,3 +1,4 @@
+<sub>
 <table id="tablepress-10" class="tablepress tablepress-id-10">
 <thead>
 <tr class="row-1 odd">
@@ -262,3 +263,4 @@ When the module receives the data over the network, it sends them to the UART co
 </tr>
 </tbody>
 </table>
+</sub>
