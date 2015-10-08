@@ -55,28 +55,23 @@ ATE1</sub></td><td class="column-5"></td><td class="column-6"><sub>Note: ATE 0 o
 	<td class="column-3"><sub>base</sub></td>
 	<td class="column-4"><sub>AT+UART_CUR=115200,8,1,0,3</sub></td>
 	<td class="column-5"></td>
-	<td class="column-6"><baudrate><sub> speed 4400-4608000</sub><br>
-<databits><sub>data bits </sub><br><sub>
-is 5: 5 Bit </sub><br><sub>
-6: 6 Bit </sub><br><sub>
-7: 7 bits </sub><br><sub>
-8: 8 bits</sub><br>
-<stopbits><sub>Stop bits </sub><br><sub>
-1 1 stop bit </sub><br><sub>
-2: 1.5 stop bit </sub><br><sub>
-3: 2 stop bits</sub><br>
-<parity><sub>parity </sub><br><sub>
-0: No </sub><br><sub>
-1: Odd </sub><br><sub>
-2: EVEN</sub><br>
-<flow control=""><sub>flow control </sub><br><sub>
-0: flow control disabled </sub><br><sub>
-1: enabled RTS </sub><br><sub>
-2: CTS enabled </sub><br><sub>
-3: Both included the RTS and CTS </sub><br><sub>
-(MTCK - UART0 CTS, MTDO - UART0 RTS) </sub><br><sub>
-Example: </sub><br><sub>
-AT + UART = 115200,8,1,0,0</sub></flow></parity></stopbits></databits></baudrate></td>
+	<td class="column-6"><sub>speed 4400-4608000<br>
+data bits (5,6,7,8)<br>
+stop bits<br>
+1: 1 stop bit<br>
+2: 1.5 stop bit<br>
+3: 2 stop bits<br>
+parity<br>
+0: No<br>
+1: Odd<br>
+2: Even<br>
+flow control<br>
+0: disabled<br>
+1: RTS enabled<br>
+2: CTS enabled<br>
+3: Both<br>
+</sub>
+</td>
 </tr>
 <tr class="row-9 odd">
 	<td class="column-1"><sub>AT + UART_DEF</sub></td><td class="column-2"><sub>Same as AT + UART_CUR</sub></td><td class="column-3"><sub>base</sub></td><td class="column-4"></td><td class="column-5"></td><td class="column-6"><sub>Command parameters are stored in flash memory and are loaded when you start the unit.</sub></td>
